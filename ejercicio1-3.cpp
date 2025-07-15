@@ -1,3 +1,4 @@
+//Dados dos valores enteros A y B, informar la suma, la resta y el producto
 #include <iostream>
 using namespace std;
 
