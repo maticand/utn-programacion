@@ -1,4 +1,4 @@
-//Solicitar al usuario que ingrese 3 notas y calcular el promedio e informarlo por pantalla
+// Solicitar al usuario que ingrese 3 notas y calcular el promedio e informarlo por pantalla
 #include <iostream>
 using namespace std;
 
