@@ -1,4 +1,6 @@
 "use strict";
-const greeting = 'Hello, TypeScript!';
-console.log(greeting);
+Object.defineProperty(exports, "__esModule", { value: true });
+const persona_1 = require("./persona");
+const persona1 = new persona_1.Persona("Juan", "Pérez");
+persona1.mostrarDatos();
 //# sourceMappingURL=index.js.map
