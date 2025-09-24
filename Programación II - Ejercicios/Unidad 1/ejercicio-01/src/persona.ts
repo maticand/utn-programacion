@@ -1,15 +1,34 @@
 export class Persona {
-  // Atributos públicos
-  public nombre: string;
-  public apellido: string;
+  // Atributos privados
+  private _nombre: string;
+  private _apellido: string;
 
+  // Inicializar objetos
   constructor(nombre: string, apellido: string) {
-    this.nombre = nombre;
-    this.apellido = apellido;
+    this._nombre = nombre;
+    this._apellido = apellido;
+  }
+
+  // Getter y Setter para nombre
+  public get nombre(): string {
+    return this._nombre;
+  }
+
+  public set nombre(value: string) {
+    this._nombre = value;
+  }
+
+  // Getter y Setter para apellido
+  public get apellido(): string {
+    return this._apellido;
+  }
+
+  public set apellido(value: string) {
+    this._apellido = value;
   }
 
   // Método para mostrar los datos
   mostrarDatos(): void {
-    console.log(`Nombre: ${this.nombre}, Apellido: ${this.apellido}`);
+    console.log(`Nombre: ${this._nombre}, Apellido: ${this._apellido}`);
   }
 }
