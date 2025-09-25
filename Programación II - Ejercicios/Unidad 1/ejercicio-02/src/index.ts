@@ -1,9 +1,10 @@
 import { Vehiculo } from "./vehiculo";
 
-// Creamos una instancia de la clase Vehiculo
-const vehiculo1 = new Vehiculo("Toyota", "Corolla", "ABC123");
+// Creamos una instancia de la clase Vehiculo con valores iniciales
+// Atributos publicos
+const vehiculo1 = new Vehiculo("Toyota", "Corolla", "ABC55123");
 
-// Asignamos valores a los atributos públicos
+// Asignamos NUEVOS valores a los atributos públicos
 vehiculo1.marca = "Honda";
 vehiculo1.modelo = "Civic";
 

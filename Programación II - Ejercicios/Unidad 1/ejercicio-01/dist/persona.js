@@ -1,6 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Persona = void 0;
 class Persona {
     nombre;
     apellido;
@@ -12,5 +10,6 @@ class Persona {
         console.log(`Nombre: ${this.nombre}, Apellido: ${this.apellido}`);
     }
 }
-exports.Persona = Persona;
+const persona1 = new Persona("Juan", "Perez");
+persona1.mostrarDatos();
 //# sourceMappingURL=persona.js.map

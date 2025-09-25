@@ -1,34 +1,20 @@
-export class Persona {
-  // Atributos privados
-  private _nombre: string;
-  private _apellido: string;
+class Persona {
+  // Declaro atributos
+  nombre: string;
+  apellido: string;
 
-  // Inicializar objetos
+  // Creo el constructor para inicializar atributos
   constructor(nombre: string, apellido: string) {
-    this._nombre = nombre;
-    this._apellido = apellido;
+    this.nombre = nombre;
+    this.apellido = apellido;
   }
 
-  // Getter y Setter para nombre
-  public get nombre(): string {
-    return this._nombre;
-  }
-
-  public set nombre(value: string) {
-    this._nombre = value;
-  }
-
-  // Getter y Setter para apellido
-  public get apellido(): string {
-    return this._apellido;
-  }
-
-  public set apellido(value: string) {
-    this._apellido = value;
-  }
-
-  // Método para mostrar los datos
+  // Metodo para mostrar datos
   mostrarDatos(): void {
-    console.log(`Nombre: ${this._nombre}, Apellido: ${this._apellido}`);
+    console.log(`Nombre: ${this.nombre}, Apellido: ${this.apellido}`);
   }
 }
+// Creo la instancia con valores
+const persona1 = new Persona("Juan", "Perez"); 
+// Muestro los valores
+persona1.mostrarDatos();

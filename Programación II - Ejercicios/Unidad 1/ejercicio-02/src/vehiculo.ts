@@ -6,7 +6,7 @@ export class Vehiculo {
   // Atributo privado: solo accesible dentro de la clase
   private patente: string;
 
-  // Constructor: inicializa los atributos al crear la instancia
+  // Creo el constructor para inicializar atributos
   constructor(marca: string, modelo: string, patente: string) {
     this.marca = marca;
     this.modelo = modelo;
